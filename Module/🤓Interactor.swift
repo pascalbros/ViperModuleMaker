@@ -1,5 +1,5 @@
 //
-//  ListInteractor.swift
+//  🤓Interactor.swift
 //  %appname%
 //
 //  Created by %name% on %date%.

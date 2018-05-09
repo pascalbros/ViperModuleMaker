@@ -3,17 +3,17 @@
 cd "$(dirname "$0")"
 source viper.conf
 
-#module_name=$1
 echo "Type your module name:"
 read module_name
-echo "Created at ~/Desktop/$module_name"
+
+user_name=`id -F`
 
 rm -rf ~/Desktop/$module_name"View"
 cp -rf Module ~/Desktop/$module_name"View"
 
 cd ~/Desktop/$module_name"View"
 
-Files=("Interfaces.swift" "ViewController.swift" "Presenter.swift" "Interactor.swift" "Wireframe.swift" Entities.swift)
+Files=("Interfaces.swift" "ViewController.swift" "Presenter.swift" "Interactor.swift" "Wireframe.swift" "Entities.swift")
 DATE=`date +'%m\/%d\/%Y'`
 
 for File in "${Files[@]}" 
@@ -29,3 +29,5 @@ for File in "${Files[@]}"
         sed -i '' -e 's/'"%appname%"'/'"$app_name"'/g' ./$module_name"$File"
         sed -i '' -e 's/'"%date%"'/'"$DATE"'/g' ./$module_name"$File"
     done
+
+echo "Created at ~/Desktop/$module_name"
