@@ -11,3 +11,7 @@ import UIKit
 class 🤓Wireframe {
 
 }
+
+extension 🤓Wireframe: 🤓WireframeInterface {
+
+}
