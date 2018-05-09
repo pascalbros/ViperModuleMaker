@@ -29,7 +29,3 @@ for File in "${Files[@]}"
         sed -i '' -e 's/'"%appname%"'/'"$app_name"'/g' ./$module_name"$File"
         sed -i '' -e 's/'"%date%"'/'"$DATE"'/g' ./$module_name"$File"
     done
-#sed -i -e 's/'"%appname%"'/'"$1"'/g' ./index.js
-#sed -i -e 's/'"%project_name%"'/'"$1"'/g' ./package.json
-#rm index.js-e
-#rm package.json-e
