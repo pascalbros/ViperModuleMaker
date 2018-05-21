@@ -6,12 +6,12 @@
 //  Copyright © %copyright%. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class 🤓Interactor {
 
 }
 
-extension 🤓Interactor: 🤓InteractorInterface {
+extension 🤓Interactor: 🤓InteractorProtocol {
 	
 }

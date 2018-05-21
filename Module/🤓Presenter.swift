@@ -6,21 +6,29 @@
 //  Copyright © %copyright%. All rights reserved.
 //
 
-import UIKit
+import Foundation
 
 class 🤓Presenter {
 	
 	fileprivate unowned let viewController: 🤓ViewController
-	fileprivate let interactor: 🤓InteractorInterface
-	fileprivate let wireframe: 🤓WireframeInterface
+	fileprivate let interactor: 🤓InteractorProtocol
+	fileprivate let wireframe: 🤓WireframeProtocol
 	
-	init(viewController: 🤓ViewController, interactor: 🤓InteractorInterface, wireframe: 🤓WireframeInterface) {
+	init(viewController: 🤓ViewController, interactor: 🤓InteractorProtocol, wireframe: 🤓WireframeProtocol) {
 		self.viewController = viewController
 		self.interactor = interactor
 		self.wireframe = wireframe
 	}
 }
 
-extension 🤓Presenter: 🤓PresenterInterface {
+extension 🤓Presenter: 🤓PresenterProtocol {
 
+}
+
+extension 🤓Presenter: 🤓DataProvider {
+    
+}
+
+extension 🤓Presenter: 🤓EventHandler {
+    
 }
