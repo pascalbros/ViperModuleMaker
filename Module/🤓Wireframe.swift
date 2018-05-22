@@ -14,7 +14,7 @@ class 🤓Wireframe {
 
 extension 🤓Wireframe: 🤓WireframeProtocol {
     func 🤓FromStoryboard() -> 🤓ViewController {
-        let vc = mainStoryboard.instantiateViewController(withIdentifier: "🤓Controller") as! 🤓ViewController
+        let vc = mainStoryboard.instantiateViewController(withIdentifier: "🤓ViewController") as! 🤓ViewController
         
         let interactor = 🤓Interactor()
         let presenter = 🤓Presenter(viewController: vc, interactor: interactor, wireframe: self)

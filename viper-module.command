@@ -14,7 +14,7 @@ cp -rf Module ~/Desktop/$module_name"View"
 cd ~/Desktop/$module_name"View"
 
 Files=("Protocols.swift" "ViewController.swift" "Presenter.swift" "Interactor.swift" "Wireframe.swift" "Entities.swift")
-DATE=`date +'%m\/%d\/%Y'`
+DATE=`date +'%d\/%m\/%Y'`
 
 for File in "${Files[@]}" 
     do
@@ -31,3 +31,5 @@ for File in "${Files[@]}"
     done
 
 echo "Created at ~/Desktop/$module_name"
+open ~/Desktop/$module_name"View"
+osascript -e 'tell application "Terminal" to close first window' & exit
