@@ -21,6 +21,7 @@ extension 🤓Wireframe: 🤓WireframeProtocol {
         vc.eventHandler = presenter
         vc.dataProvider = presenter
         
+        interactor.output = presenter
         return vc
     }
     

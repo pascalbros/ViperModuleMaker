@@ -32,3 +32,7 @@ extension 🤓Presenter: 🤓DataProvider {
 extension 🤓Presenter: 🤓EventHandler {
     
 }
+
+extension 🤓Presenter: 🤓InteractorOutput {
+    
+}
