@@ -9,7 +9,8 @@
 import Foundation
 
 class 🤓Interactor {
-
+    let networkManager = 🤓NetworkManager()
+    weak var output: 🤓InteractorOutput?
 }
 
 extension 🤓Interactor: 🤓InteractorProtocol {

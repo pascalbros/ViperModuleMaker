@@ -27,3 +27,7 @@ protocol 🤓EventHandler: class {
 protocol 🤓DataProvider: class {
     
 }
+
+protocol 🤓InteractorOutput: class {
+    
+}

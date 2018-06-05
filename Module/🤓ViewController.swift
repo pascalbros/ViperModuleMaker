@@ -10,8 +10,8 @@ import UIKit
 
 class 🤓ViewController: UIViewController {
 
-	weak var eventHandler: 🤓EventHandler?
-    weak var dataProvider: 🤓DataProvider?
+	var eventHandler: 🤓EventHandler?
+    var dataProvider: 🤓DataProvider?
 	
     override func viewDidLoad() {
         super.viewDidLoad()

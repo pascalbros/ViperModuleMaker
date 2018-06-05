@@ -13,7 +13,7 @@ cp -rf Module ~/Desktop/$module_name"View"
 
 cd ~/Desktop/$module_name"View"
 
-Files=("Protocols.swift" "ViewController.swift" "Presenter.swift" "Interactor.swift" "Wireframe.swift" "Entities.swift")
+Files=("Protocols.swift" "ViewController.swift" "Presenter.swift" "Interactor.swift" "Wireframe.swift" "Entities.swift" "NetworkManager.swift")
 DATE=`date +'%d\/%m\/%Y'`
 
 for File in "${Files[@]}" 
