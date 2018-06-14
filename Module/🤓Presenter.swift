@@ -10,7 +10,7 @@ import Foundation
 
 class 🤓Presenter {
 	
-	fileprivate unowned let viewController: 🤓ViewController
+	fileprivate weak var viewController: 🤓ViewController?
 	fileprivate let interactor: 🤓InteractorProtocol
 	fileprivate let wireframe: 🤓WireframeProtocol
 	
