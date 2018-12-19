@@ -17,7 +17,7 @@ protocol 🤓InteractorProtocol: class {
 }
 
 protocol 🤓WireframeProtocol: class {
-	func 🤓FromStoryboard() -> 🤓ViewController
+	func 🤓FromXib() -> 🤓ViewController
 }
 
 protocol 🤓EventHandler: class {
